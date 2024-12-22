@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bliss Bites</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #5a4d41;
+        }
+
+        header {
+            background-color: #f4e1c1;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #5a4d41;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #5a4d41;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #c96e34;
+        }
+
+        h1 {
+            color: #c96e34;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-section {
+            padding: 30px;
+            background-color: #fff6eb;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styles */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            display: inline-block;
+            background-color: #c96e34;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #a35629;
+        }
+
+        /* Contact Info Section */
+        .contact-info {
+            text-align: center;
+            background-color: #f4e1c1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h2 {
+            color: #5a4d41;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info strong {
+            color: #c96e34;
+        }
+
+        footer {
+            background-color: #f4e1c1;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            color: #5a4d41;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Bliss Bites</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="story.html">Our Story</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you! Please fill out the form below and we will get in touch with you shortly.</p>
+
+        <form class="contact-form" aria-label="Contact form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-required="true">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required aria-required="true">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here" required
+                aria-required="true"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Our Contact Details</h2>
+            <p><strong>Email:</strong> support@blissbites.com</p>
+            <p><strong>Phone:</strong> +91 91237890</p>
+            <p><strong>Address:</strong> 123 Juhu Tara Road Santacruz West Mumbai 400049</p>
+        </div>
+    </section>
+
+    <!-- Script for Form Submission -->
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Show success alert
+            alert('Thank you for contacting us! We will respond to your message shortly.');
+
+            // Reset form
+            this.reset();
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bliss Bites. Stay connected for the sweetest treats.</p>
+    </footer>
+</body>
+
+</html>

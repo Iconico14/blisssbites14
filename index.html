@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bliss Bites - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=CMU+Serif&display=swap" rel="stylesheet">
+    <style>
+        /* General Body Styling */
+        body {
+            margin: 0;
+            font-family: 'CMU Serif', serif;
+            background: linear-gradient(to bottom, #FFF5F3, #FDE9E6);
+            color: #8B4513;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #F8EDEB;
+            padding: 30px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        header .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        header .logo img {
+            height: 80px; /* Increased logo size */
+        }
+
+        header nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 30px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #8B4513;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #F4A460;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+            gap: 20px;
+            text-align: center; /* Ensures that the text is centered */
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #8B4513;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero a {
+            text-decoration: none;
+            background: linear-gradient(90deg, #FFDAB9, #F4A460);
+            padding: 15px 30px;
+            border-radius: 50px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .hero a:hover {
+            background: linear-gradient(90deg, #F4A460, #FFDAB9);
+            transform: scale(1.05);
+        }
+
+        /* Bestsellers Section */
+        .featured-cakes {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #FFF8F5;
+            border-radius: 20px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-cakes h2 {
+            text-align: center;
+            color: #8B4513;
+            margin-bottom: 40px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .cake-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .cake-item {
+            width: 300px; /* Increased width */
+            height: 420px; /* Increased height */
+            text-align: center;
+            background: linear-gradient(to bottom, #FDE9E6, #FFF5F3);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cake-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .cake-item img {
+            width: 100%;
+            height: 220px; /* Increased height of the images */
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .cake-item p {
+            font-size: 18px;
+            color: #8B4513;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .cake-item span {
+            font-size: 16px;
+            color: #F4A460;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .cake-item button {
+            width: 90%;
+            padding: 10px;
+            background: linear-gradient(90deg, #FFDAB9, #F4A460);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .cake-item button:hover {
+            background: linear-gradient(90deg, #F4A460, #FFDAB9);
+            transform: scale(1.05);
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #F8EDEB;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #8B4513;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #F4A460;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="logo.jpg" alt="Bliss Bites Logo"> <!-- Logo Placeholder -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="story.html">Our Story</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Welcome to Bliss Bites!</h1>
+            <p>SATISFY YOUR CRAVINGS, NOT YOUR GUILT!</p>
+            <p><strong>Our cakes are gluten-free and perfect for staying healthy and munching on your favourites!</strong></p>
+            <a href="products.html">Explore Our Cakes</a>
+        </div>
+    </section>
+
+    <!-- Bestsellers Section -->
+    <section class="featured-cakes">
+        <h2>Dive into Our Bestsellers!</h2>
+        <div class="cake-gallery">
+            <!-- Cake Items -->
+            <div class="cake-item">
+                <img src="product1.jpg" alt="Classic Chocolate Cake"> <!-- Placeholder -->
+                <p>Classic Chocolate Cake</p>
+                <span>₹1500</span>
+                <button onclick="addToCart('Classic Chocolate Cake')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="product2.jpg" alt="Vanilla Raspberry Delight">
+                <p>Vanilla Raspberry Delight</p>
+                <span>₹1700</span>
+                <button onclick="addToCart('Vanilla Raspberry Delight')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="product3.jpg" alt="Red Velvet Bliss">
+                <p>Red Velvet Bliss</p>
+                <span>₹1900</span>
+                <button onclick="addToCart('Red Velvet Bliss')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="product4.jpg" alt="Strawberry Shortcake">
+                <p>Strawberry Shortcake</p>
+                <span>₹1600</span>
+                <button onclick="addToCart('Strawberry Shortcake')">Add to Cart</button>
+            </div>
+            <!-- 8 More Cake Items -->
+            <div class="cake-item">
+                <img src="product5.jpg" alt="Chocolate Hazelnut Dream">
+                <p>Chocolate Hazelnut Dream</p>
+                <span>₹1800</span>
+                <button onclick="addToCart('Chocolate Hazelnut Dream')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="product6.jpg" alt="Mango Passionfruit Delight">
+                <p>Mango Passionfruit Delight</p>
+                <span>₹1400</span>
+                <button onclick="addToCart('Mango Passionfruit Delight')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="product7.jpg" alt="Caramel Toffee Cake">
+                <p>Caramel Toffee Cake</p>
+                <span>₹1550</span>
+                <button onclick="addToCart('Caramel Toffee Cake')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="product8.jpg" alt="Coconut Lime Bliss">
+                <p>Coconut Lime Bliss</p>
+                <span>₹1650</span>
+                <button onclick="addToCart('Coconut Lime Bliss')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="product9.jpg" alt="Pineapple Dream Cake">
+                <p>Pineapple Dream Cake</p>
+                <span>₹1500</span>
+                <button onclick="addToCart('Pineapple Dream Cake')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="product10.jpg" alt="Lemon Blueberry Cake">
+                <p>Lemon Blueberry Cake</p>
+                <span>₹1750</span>
+                <button onclick="addToCart('Lemon Blueberry Cake')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="product11.jpg" alt="Peach Mango Cake">
+                <p>Peach Mango Cake</p>
+                <span>₹1800</span>
+                <button onclick="addToCart('Peach Mango Cake')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="product12.jpg" alt="Chocolate Fudge Cake">
+                <p>Chocolate Fudge Cake</p>
+                <span>₹2000</span>
+                <button onclick="addToCart('Chocolate Fudge Cake')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="product13.jpg" alt="Cinnamon Apple Cake">
+                <p>Cinnamon Apple Cake</p>
+                <span>₹1500</span>
+                <button onclick="addToCart('Cinnamon Apple Cake')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Bliss Bites. All Rights Reserved. <a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        function addToCart(cakeName) {
+            alert(cakeName + " added to cart!");
+        }
+    </script>
+</body>
+
+</html>
