@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homemade Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .heading {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            justify-items: center;
+            padding: 0 20px;
+        }
+
+        .option {
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .option img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .option p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #34495e;
+        }
+
+        .option a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Homemade Recipes</h1>
+        <div class="options-grid">
+            <div class="option">
+                <a href="face-mask.html">
+                    <img src="https://dqt8gd4elnkw6.cloudfront.net/image/E09p_cJc9DIY%20Face%20Mask%20For%20Acne%20Prone%20Skin.jpg" alt="Face Mask">
+                    <p>Homemade Face Mask</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="body-scrub.html">
+                    <img src="https://dqt8gd4elnkw6.cloudfront.net/image/E09p_cJc9DIY%20Face%20Mask%20For%20Acne%20Prone%20Skin.jpg" alt="Body Scrub">
+                    <p>Homemade Body Scrub</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="toner.html">
+                    <img src="https://i.pinimg.com/736x/fe/51/e9/fe51e9e65dbec0428fc8bbc1642d2722.jpg" alt="Toner">
+                    <p>Homemade Toner</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="serum.html">
+                    <img src="https://images.meesho.com/images/products/325532890/nohgl_512.webp" alt="Serum">
+                    <p>Homemade Serum</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="hair-oil.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR22GSUIL1Ykg8ezZvw1StM9mVXhsoB3GB1qg&s" alt="Hair Oil">
+                    <p>Homemade Hair Oil</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

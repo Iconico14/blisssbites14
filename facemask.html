@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homemade Face Masks</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f2e8; /* Neutral peachy-beige background */
+        }
+
+        .header {
+            background-color: #dcd6d0;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #3e3e3e;
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+
+        .navigation {
+            background-color: #cfc7b8;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .navigation ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navigation li {
+            display: inline;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #3e3e3e;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .navigation a:hover {
+            background-color: #eae3d8;
+            color: #2c3e50;
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .description {
+            font-size: 1.4rem;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            justify-items: center;
+            padding: 0 20px;
+        }
+
+        .option {
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .option a {
+            text-decoration: none; /* Removes underline */
+        }
+
+        .option img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .option p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #34495e;
+        }
+
+        #content {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Homemade Face Masks</h1>
+    </div>
+
+    <div class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Our Story</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <p class="description">Discover a range of homemade face masks using natural ingredients that bring out your skin's natural glow. Whether you have acne, dry skin, or want to brighten your complexion, there's something here for everyone!</p>
+
+        <div class="options-grid">
+            <div class="option">
+                <a href="turmeric.html">
+                    <img src="https://i.pinimg.com/736x/d2/08/40/d208403ee2b1e1118a0ace0e3065c639.jpg" alt="Turmeric Face Mask">
+                    <p>Turmeric Face Mask</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="honey.html">
+                    <img src="https://i.pinimg.com/736x/f4/24/28/f424289bdd492ba11f3836b1816a9689.jpg" alt="Honey Face Mask">
+                    <p>Honey Face Mask</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="aloevera.html">
+                    <img src="https://i.pinimg.com/736x/e7/a7/51/e7a751117e71636963fcb70d07f44406.jpg" alt="Aloe Vera Face Mask">
+                    <p>Aloe Vera Face Mask</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="greentea.html">
+                    <img src="https://i.pinimg.com/736x/78/95/b0/7895b082c41e80d9ce2c7cd4648a505b.jpg" alt="Green Tea Face Mask">
+                    <p>Green Tea Face Mask</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="oatmeal.html">
+                    <img src="https://i.pinimg.com/736x/e2/63/28/e2632867fff720758e10bb1add44d905.jpg" alt="Oatmeal Face Mask">
+                    <p>Oatmeal Face Mask</p>
+                </a>
+            </div>
+        </div>
+
+        <div id="content"></div>
+    </div>
+
+    <script>
+        const maskContent = {
+            turmeric: `<h2>Turmeric Face Mask</h2><p>Turmeric has anti-inflammatory and brightening properties...</p>`,
+            honey: `<h2>Honey Face Mask</h2><p>Honey is deeply moisturizing and soothing for the skin...</p>`,
+            "aloe-vera": `<h2>Aloe Vera Face Mask</h2><p>Aloe vera is known for its cooling and healing properties...</p>`,
+            "green-tea": `<h2>Green Tea Face Mask</h2><p>Green tea contains antioxidants that help fight free radicals...</p>`,
+            oatmeal: `<h2>Oatmeal Face Mask</h2><p>Oatmeal is great for soothing sensitive skin and reducing redness...</p>`,
+        };
+
+        function loadContent(mask) {
+            const contentDiv = document.getElementById("content");
+            contentDiv.innerHTML = maskContent[mask];
+            contentDiv.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
