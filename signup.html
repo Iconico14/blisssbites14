@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Bliss Bites</title>
+    <title>Sign Up - NATURE'S NECTOR</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* General Styling */
@@ -152,7 +152,7 @@
 <body>
     <!-- Navigation Bar -->
     <header>
-        <div class="logo">Bliss Bites</div>
+        <div class="logo">NATURE'S NECTOR</div>
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -191,21 +191,30 @@
 
     <!-- Script for Form Validation -->
     <script>
-        document.querySelector('.signup-form').addEventListener('submit', function (event) {
-            event.preventDefault();
+document.querySelector('.signup-form').addEventListener('submit', function (event) {
+    event.preventDefault();
 
-            const password = document.getElementById('password').value;
-            const confirmPassword = document.getElementById('confirm-password').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirm-password').value;
 
-            if (password !== confirmPassword) {
-                alert('Passwords do not match. Please try again.');
-                return;
-            }
+    // Check if passwords are empty
+    if (!password || !confirmPassword) {
+        alert('Please fill in both password fields.');
+        return;
+    }
 
-            alert('Account created successfully!');
-            this.reset();
-        });
-    </script>
+    // Check if passwords match
+    if (password !== confirmPassword) {
+        alert('Passwords do not match. Please try again.');
+        return;
+    }
+
+    // Additional password strength checks can be added here
+
+    alert('Account created successfully!');
+    this.reset();
+});
+</script>
 
     <!-- Footer -->
     <footer>
