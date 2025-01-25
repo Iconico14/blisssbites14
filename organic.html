@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homemade Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f2e8; /* Neutral beige background */
+        }
+
+        /* Header and Navigation Styling */
+        .header {
+            background-color: #dcd6d0; /* Light beige for header */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #3e3e3e; /* Darker text color for contrast */
+            font-size: 2.5rem;
+        }
+
+        .navigation {
+            background-color: #cfc7b8; /* Light neutral color for navigation */
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .navigation ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navigation li {
+            display: inline;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #3e3e3e; /* Dark text color */
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .navigation a:hover {
+            background-color: #eae3d8; /* Soft hover effect */
+            color: #2c3e50; /* Slightly darker color on hover */
+        }
+
+        /* Content Styling */
+        .container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .heading {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            justify-items: center;
+            padding: 0 20px;
+        }
+
+        .option {
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .option img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .option p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #34495e;
+        }
+
+        .option a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Additional content and spacing */
+        .additional-content {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #dcd6d0; /* Light background for additional content */
+            color: #3e3e3e;
+            font-size: 1.2rem;
+        }
+
+        .additional-content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .additional-content p {
+            line-height: 1.6;
+            color: #7f8c8d;
+        }
+
+        .space-bottom {
+            margin-bottom: 40px; /* Space at the bottom of the page */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Exclusive Homemade Recipes</h1>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="story.html">Our Story</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <p class="description">Explore our handpicked, exclusive homemade recipes designed to bring natural beauty solutions right to your home. From skincare to hair care, we've got everything you need to look and feel your best.</p>
+
+        <div class="options-grid">
+            <div class="option">
+                <a href="facemask.html"> <!-- Added link to facemask.html -->
+                    <img src="https://dqt8gd4elnkw6.cloudfront.net/image/E09p_cJc9DIY%20Face%20Mask%20For%20Acne%20Prone%20Skin.jpg" alt="Face Mask">
+                    <p>Homemade Face Mask</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="bodyscrub.html">
+                    <img src="https://dqt8gd4elnkw6.cloudfront.net/image/E09p_cJc9DIY%20Face%20Mask%20For%20Acne%20Prone%20Skin.jpg" alt="Body Scrub">
+                    <p>Homemade Body Scrub</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="toner.html">
+                    <img src="https://i.pinimg.com/736x/fe/51/e9/fe51e9e65dbec0428fc8bbc1642d2722.jpg" alt="Toner">
+                    <p>Homemade Toner</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="serum.html">
+                    <img src="https://images.meesho.com/images/products/325532890/nohgl_512.webp" alt="Serum">
+                    <p>Homemade Serum</p>
+                </a>
+            </div>
+            <div class="option">
+                <a href="hairoil.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR22GSUIL1Ykg8ezZvw1StM9mVXhsoB3GB1qg&s" alt="Hair Oil">
+                    <p>Homemade Hair Oil</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Content Section -->
+    <div class="additional-content">
+        <h2>Why Choose Our Homemade Recipes?</h2>
+        <p>Our recipes are made with natural, high-quality ingredients that are handpicked to ensure the best results. Whether you're looking for a skincare solution or a nourishing hair care routine, our homemade options are designed to help you achieve healthy, glowing results without the use of harsh chemicals. Each recipe is easy to follow, affordable, and made with love for your well-being.</p>
+    </div>
+
+    <!-- Space Below -->
+    <div class="space-bottom"></div>
+
+</body>
+</html>
